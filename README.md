@@ -1,10 +1,16 @@
 What to achieve:
 
-Infrastructure as Code (IaC) with Terraform
+Infrastructure as Code (IaC) with Terraform.
+
 ● Create an AWS VPC with two public and two private subnets.
+
 ● Implement an EC2 instance in one private subnet.
+
 ● Configure an Application Load Balancer (ALB) in one public subnet.
+
 ● Use Terraform for provisioning and managing the infrastructure.
+
+
 
 
 To initiate this make sure that Terraform should be installed on the machine from where you are going to provision and manage your infra
@@ -12,6 +18,7 @@ To initiate this make sure that Terraform should be installed on the machine fro
 Make sure you have not put your AWS CLI credentials in the code instead, you can store it somewhere else in your local system and provide your path or also can use an export command like export ACCESS_KEY="ACCESS_KEY_ID" and similarly need to do for secret key and region.
 
 step 1: Create provider.tf file where you need to mention which cloud provider you are going to use with Terraform like AWS, AZURE OR GCP.
+
 step 2: create module for vpc where I have created the below resource my defining it in main.tf, Basically all the networking configurations I have defined here.
         A. vpc
         B. internet_gateway 
